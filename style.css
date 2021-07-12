@@ -2,4 +2,31 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 62.5%;  
+  font-size: 1.6rem;
+}
+button {
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  outline: none;
+}
+.calculator {
+  max-width: 15rem;
+  margin: 0 auto;
+}
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  text-align: center;
+
+  /* background-color: ; */
+}
+.keys > * {
+  border: 1px solid black;
+} 
+.equal {
+  grid-column: 4;
+  grid-row: 2 / span 4;
 }
