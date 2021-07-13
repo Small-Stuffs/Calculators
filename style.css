@@ -7,13 +7,24 @@
 }
 button {
   border: 0;
-  border-radius: 0;
-  background-color: transparent;
+  border-radius: 10px;
+  background-color: rgb(236, 236, 236);
   outline: none;
 }
 .calculator {
   max-width: 15rem;
   margin: 0 auto;
+  background-color: rgb(209, 208, 208);
+  padding: .5rem;
+  margin: 3rem auto;
+  border-radius: 10px;
+}
+.display {
+  background-color: black;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: right;
+  padding: 0 1rem;
 }
 .keys {
   display: grid;
@@ -26,6 +37,9 @@ button {
 .keys > * {
   border: 1px solid black;
 } 
+.ac {
+  background-color: red;
+}
 .equal {
   grid-column: 4;
   grid-row: 2 / span 4;
