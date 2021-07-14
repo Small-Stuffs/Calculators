@@ -37,6 +37,14 @@ button {
 .keys > * {
   border: 1px solid black;
 } 
+.keys > .is-depressed::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
 .ac {
   background-color: red;
 }
